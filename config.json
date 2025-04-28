@@ -1,0 +1,99 @@
+#This is configrations for program . Helps to better and efficent analyze 
+{
+    "input_file": "conversation.txt",
+    "output_file": "conversation_analysis.json",
+    "emergency_keywords": {
+        "help": 1.0,
+        "emergency": 2.0,
+        "urgent": 2.0,
+        "accident": 2.0,
+        "danger": 1.5,
+        "fire": 2.0,
+        "injury": 1.5,
+        "pain": 1.0,
+        "critical": 2.0,
+        "collapse": 1.5,
+        "unconscious": 1.0,
+        "bleeding": 2.0,
+        "crash": 2.0,
+        "burn": 2.0
+    },
+    "issue_keywords": {
+        "Stroke": [
+            "stroke",
+            "drooping face",
+            "face drooping",
+            "slurred speech",
+            "weakness",
+            "numbness"
+        ],
+        "Heart Attack": [
+            "chest pain",
+            "heart attack",
+            "shortness of breath",
+            "arm pain",
+            "jaw pain"
+        ],
+        "Car Accident": [
+            "car accident",
+            "crash",
+            "collision",
+            "hit by car",
+            "wreck"
+        ],
+        "Fire": [
+            "fire",
+            "burning",
+            "smoke",
+            "flames"
+        ],
+        "Injury": [
+            "bleeding",
+            "cut",
+            "broken bone",
+            "fracture",
+            "wound",
+            "wounded"
+        ],
+        "Unconscious": [
+            "unconscious",
+            "unresponsive",
+            "passed out",
+            "fainted"
+        ],
+        "Other": [
+            "fall",
+            "choking",
+            "seizure",
+            "allergic reaction",
+            "poisoning"
+        ]
+    },
+    "urgency_indicators": [
+        "unconscious",
+        "unresponsive",
+        "bleeding",
+        "shallow breathing",
+        "chest pain",
+        "drooping face",
+        "slurred speech",
+        "not moving",
+        "severe pain",
+        "burning",
+        "crash",
+        "fainted",
+        "seizure",
+        "choking"
+    ],
+    "thresholds": {
+        "high": 5.0,
+        "medium": 2.0,
+        "urgency": 3.0
+    },
+    "summarizer": {
+        "model": "facebook/bart-large-cnn",
+        "max_length": 100,
+        "min_length": 30
+    },
+    "name_extraction": "victim"
+}
