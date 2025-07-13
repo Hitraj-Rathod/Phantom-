@@ -6,7 +6,7 @@ Phantom- An Emergency conversation summarizer
 
 ## Project Overview
 
-The **AI Emergency Response System** is an intelligent solution designed to monitor and analyze emergency calls conversations . The system uses advanced AI techniques to detect any suspicious or potentially dangerous content within a call. Upon identifying such content, the system automatically analysis the call and summarised the conversation .
+The **AI Emergency Response System** is an intelligent solution designed to monitor and analyze emergency calls conversations . The system uses advanced **KEYWORDS** techniques to detect any suspicious or potentially dangerous content within a call. Upon identifying such content, the system automatically analysis the call and summarised the conversation .
 This project aims to enhance emergency response efficiency by providing timely alerts and reducing human error in call monitoring.
 
 ---
